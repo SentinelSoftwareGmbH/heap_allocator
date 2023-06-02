@@ -4,16 +4,16 @@
 #include <stdint.h>
 #include <stddef.h>
 
-#define HEAP_INIT_SIZE 0x10000
-#define HEAP_MAX_SIZE 0xF0000
-#define HEAP_MIN_SIZE 0x10000
+#define HEAP_INIT_SIZE 0x200000
+#define HEAP_MAX_SIZE 0x200000
+#define HEAP_MIN_SIZE 0x200000
 
 #define MIN_ALLOC_SZ 4
 
 #define MIN_WILDERNESS 0x2000
 #define MAX_WILDERNESS 0x1000000
 
-#define BIN_COUNT 9
+#define BIN_COUNT 20
 #define BIN_MAX_IDX (BIN_COUNT - 1)
 
 #define ALIGN_BTYES     sizeof(long)    /* alignment bytes */
